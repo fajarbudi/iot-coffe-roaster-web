@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box !important;
+}
+
+.shadow3d{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -5px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    background-color:   #1a43bf;
+}
+.sideBar{
+    position: relative;
+    height: 100vh;
+    min-width: 250px;
+    max-width: 250px;
+    color: rgb(186, 208, 231);
+    background-color:   #1a43bf;
+    transition: margin .5s ease-in-out;
+}
+
+.content{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 60px 0 0 60px;
+    background-color: #ffffff
+}
+
+.namaBox{
+    text-align: center;
+    background-color: #1a43bf; 
+    color: rgb(186, 208, 231)
+}
+.namaPage{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(146, 161, 177);
+    background-color: rgba(0, 0, 0, 0.12);
+    display: block;
+    border-bottom: 1px solid black;
+    transition: color 0.5s ease-in-out;
+}
+
+.btnHitung{
+    background-color: #7c83ff;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 25px;
+    transition: all 0.4s ease-in-out;
+}
+
+.btnHitung:hover{
+    background-color: #4d53c4;
+}
+
+.namaPage:hover{
+    color: white;
+}
+#tutup{
+    writing-mode: vertical-lr;
+    position: absolute;
+    padding: 20px 0 20px 2px;
+    top: 50%;
+    left: 245px;
+    background-color: #0067da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: none;
+}
+.table > :not(caption) > * > * {
+    background-color: transparent;
+}
+.setting{
+    min-width: 300px;
+    max-width: 1500px;
+}
+@media only screen and (max-width: 1000px) {
+    .sideBarHid{
+      margin-left: -250px;
+    }
+    #tutup{
+        display: unset;
+    }
+    .radiusHid{
+        border-radius: unset;
+    } 
+  }
+@media screen and (max-width : 500px){
+    .delPadding{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .setting{
+        min-width: 350px;
+    }
+}
